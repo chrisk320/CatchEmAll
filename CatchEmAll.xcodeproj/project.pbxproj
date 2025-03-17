@@ -6,13 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		CDAAECE72D87AF7700234E2A /* Creatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAAECE62D87AF7700234E2A /* Creatures.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		CDAAECD32D8774F700234E2A /* CatchEmAll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatchEmAll.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDAAECE62D87AF7700234E2A /* Creatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creatures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -50,7 +45,6 @@
 		CDAAECCA2D8774F700234E2A = {
 			isa = PBXGroup;
 			children = (
-				CDAAECE62D87AF7700234E2A /* Creatures.swift */,
 				CDAAECD52D8774F700234E2A /* CatchEmAll */,
 				CDAAECD42D8774F700234E2A /* Products */,
 			);
@@ -138,7 +132,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDAAECE72D87AF7700234E2A /* Creatures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
