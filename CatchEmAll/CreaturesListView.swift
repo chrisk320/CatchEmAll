@@ -13,12 +13,12 @@ struct CreaturesListView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                List(0..<creatures.creaturesArray.count, id: \.self) { index in
+                List(creatures.creaturesArray) { creature in
                     LazyVStack {
                         NavigationLink {
-                            DetailView(creature: creatures.creaturesArray[index])
+                            DetailView(creature: creature)
                         } label: {
-                            Text("\(index + 1). \(creatures.creaturesArray[index].name.capitalized)")
+                            Text(creature.name.capitalized)
                                 .font(.title2)
                         }
                     }
@@ -26,7 +26,7 @@ struct CreaturesListView: View {
                         guard let lastCreature = creatures.creaturesArray.last else {
                             return
                         }
-                        if creatures.creaturesArray[index].name == lastCreature.name && creatures.urlString.hasPrefix("http") {
+                        if creature.name == lastCreature.name && creatures.urlString.hasPrefix("http") {
                             await creatures.getData()
                         }
                     }
